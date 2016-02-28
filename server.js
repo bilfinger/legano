@@ -1,13 +1,12 @@
 #!/bin/env node
 'use strict';
-var cfg  = require('./package').config
-,   port = process.env.OPENSHIFT_NODEJS_PORT||8080
-,ipaddress=process.env.OPENSHIFT_NODEJS_IP
-,http=require('http')
+var
+     port       = process.env.OPENSHIFT_NODEJS_PORT||8080
+   , ipaddress  = process.env.OPENSHIFT_NODEJS_IP
+   , cfg        = require('./package').config
+   , server     = require('http').createServer( function(req,res){return router(req,res,slog,cb,env,memcache,esfm.keep,cfg.table,sb,sub,esm)})
 ,fs=require('fs')
 ,router=require(cfg.path+'swnode/swRouter')
-,slog=cfg.log?require(cfg.path+'swnode/swLogStream')('./log/server.log'):undefined
-,mud=require(cfg.path+'swnode/modbus_udp')
 ,esfm=require('./esfm')
 ,cb=function(e){env=e}
 ,sb=function(e){sub=e}
@@ -20,8 +19,7 @@ var cfg  = require('./package').config
      ,{ev:'update',cb:esfm.put}
      ]
 ;
-http.createServer(function(req,res){router(req,res,slog,cb,env,memcache,esfm.keep,cfg.table,sb,sub,esm)})
-.listen(port,ipaddress,function(){console.log('SERVER listen on port '+cfg.host+cfg.webport+cfg.data+cfg.table)});
+server.listen(port,ipaddress,function(){console.log('SERVER listen on port '+cfg.host+cfg.webport+cfg.data+cfg.table)});
 /*
 fs.readFile(cfg.data,function(err,data){if(err)throw err;env=JSON.parse(data);env[cfg.table].forEach(function(e,i){console.log('startet with',cfg.simulation,e.ip,e.plant,e.station)})});
 
