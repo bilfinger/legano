@@ -2,7 +2,7 @@
 'use strict';
 var cfg=require('./package').config
 ,port=process.env.OPENSHIFT_NODEJS_PORT||cfg.webport
-,ipaddress=process.env.OPENSHIFT_NODEJS_IP||'*'
+,ipaddress=process.env.OPENSHIFT_NODEJS_IP
 ,http=require('http')
 ,fs=require('fs')
 ,router=require(cfg.path+'swnode/swRouter')
