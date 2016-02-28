@@ -1,7 +1,7 @@
 #!/bin/env node
 'use strict';
-var cfg=require('./package').config
-,port=process.env.OPENSHIFT_NODEJS_PORT||cfg.webport
+var cfg  = require('./package').config
+,   port = process.env.OPENSHIFT_NODEJS_PORT||8080
 ,ipaddress=process.env.OPENSHIFT_NODEJS_IP
 ,http=require('http')
 ,fs=require('fs')
@@ -22,7 +22,7 @@ var cfg=require('./package').config
 ;
 http.createServer(function(req,res){router(req,res,slog,cb,env,memcache,esfm.keep,cfg.table,sb,sub,esm)})
 .listen(port,ipaddress,function(){console.log('SERVER listen on port '+cfg.host+cfg.webport+cfg.data+cfg.table)});
-
+/*
 fs.readFile(cfg.data,function(err,data){if(err)throw err;env=JSON.parse(data);env[cfg.table].forEach(function(e,i){console.log('startet with',cfg.simulation,e.ip,e.plant,e.station)})});
 
 setInterval(function(){fs.writeFile(cfg.data,JSON.stringify(env,null,2),function(err){if(err)throw err})},360000);
@@ -36,3 +36,4 @@ var schicht_wechsel=function(elem){if(elem['strigger']){var oldteilio=elem['teil
 var simulation=function (xsub,xtable,xenv,xesf,xkv){const j=parseInt(Math.random()*xenv[xtable].length);const k=parseInt(Math.random()*xkv.length);const lnow=Date.now();let elem=Array.prototype.filter.call(xenv[xtable],(e,i,a) => i===j);monats_wechsel(elem[0]);schicht_wechsel(elem[0]);elem_update(elem[0],xkv[k],xesf,xsub,xtable,true)};
 
 if(cfg.simulation) setInterval(function(){simulation(sub,cfg.table,env,esfm,kv)},5000);
+*/
