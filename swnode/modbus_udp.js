@@ -1,0 +1,2 @@
+module.exports=function(pserver,pport,padr,plength,callback,plant,station,id,env){var udpClient=require('dgram').createSocket('udp4'),smessage=new Buffer(12);smessage.writeUInt32BE(65536,0,4);smessage.writeUInt32BE(393475,4,4);smessage.writeInt16BE(padr,8,2);smessage.writeInt16BE(plength,10,2);udpClient.send(smessage,0,smessage.length,pport,pserver,function(err,bytes){if(err)throw err});udpClient.on('message',function(message,remote){udpClient.close();callback(message,pserver,plant,station,id,env)})};
+

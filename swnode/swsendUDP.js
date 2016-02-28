@@ -1,0 +1,1 @@
+module.exports=function(msg,host,port){const asocket=require('dgram').createSocket('udp4');let message=new Buffer(msg);asocket.send(message,0,message.length,port,host,function(err,bytes){if(err)throw err;console.log('UDPsent %d %d %s %s %d',Date.now(),port,host,message,bytes);asocket.close()})};
