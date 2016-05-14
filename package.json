@@ -12,7 +12,7 @@
 ,  "license": "Free"
 ,  "config":{"table":"fabs"
             ,"data":"fabs.lst"
-            ,"webport":8080
+            ,"webport":8000
             ,"udpport":8877
             ,"splkport":8878
             ,"splkhost":"localhost"
