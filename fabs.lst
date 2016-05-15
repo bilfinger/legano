@@ -6,35 +6,32 @@
       "strigger": 0,
       "mtrigger": 0,
       "status": 1,
-      "lstatus": "5",
+      "lstatus": "4",
       "energy": 412617.4,
       "teilesoll": "80",
       "schichtmin": "20",
-      "schichtdat": 1456677065025,
+      "schichtdat": 1463311887219,
       "teile": 0,
       "teilio": 0,
-      "teilnio": 1,
-      "taktist": 1,
+      "teilnio": 0,
+      "taktist": 4,
       "taktsoll": "1080",
       "prozess": 3,
       "_id": "MCmi4dcc1d",
       "plant": "X.CHE",
       "ip": "X.1.11.11:102",
       "station": "11_160_4",
-      "addat": "2016-02-28T16:34:20.587Z",
-      "adat": 1456677260587,
-      "sdat": 1456677260587,
+      "addat": "2016-05-15T11:32:02.280Z",
+      "adat": 1463311922280,
+      "sdat": 1463311922280,
       "stimes": [
         null,
-        null,
-        0.16698333333333334,
-        null,
-        null,
-        4.2606166666666665
+        0.58435
       ],
       "hteilio": [
         1,
-        2
+        2,
+        1
       ],
       "hstimes": [
         0,
@@ -42,20 +39,23 @@
         0,
         0,
         0,
-        0,
+        110580,
         24
       ],
       "hteilnio": [
         1,
-        2
+        2,
+        1
       ],
       "hteilabs": [
         -79,
-        -78
+        -78,
+        -79
       ],
       "hteilabsp": [
         -0.9875,
-        -0.975
+        -0.975,
+        -0.9875
       ],
       "adddat": "0"
     },
@@ -65,33 +65,38 @@
       "mtrigger": 0,
       "arbeitsfolge": "160_3",
       "status": 1,
-      "lstatus": "2",
+      "lstatus": "4",
       "energy": 412617.345,
       "teilesoll": "80",
       "schichtmin": "20",
-      "schichtdat": 1456677075041,
+      "schichtdat": 1463311907255,
       "teile": 0,
       "teilio": 1,
-      "teilnio": 0,
-      "taktist": 2,
+      "teilnio": 1,
+      "taktist": 5,
       "taktsoll": "1080",
       "prozess": 3,
       "_id": "MCmi3dnc3e",
       "plant": "X.CHE",
       "ip": "X.1.11.13:102",
       "station": "Verbindung_13_160_3",
-      "addat": "2016-02-28T16:34:30.595Z",
-      "adat": 1456677270595,
-      "sdat": 1456676954867,
-      "stimes": [],
+      "addat": "2016-05-15T11:32:17.298Z",
+      "adat": 1463311937298,
+      "sdat": 1463311907255,
+      "stimes": [
+        null,
+        null,
+        0
+      ],
       "hteilio": [
         1,
-        5
+        5,
+        2
       ],
       "hstimes": [
         0,
         0,
-        4,
+        110586,
         0,
         0,
         2,
@@ -99,15 +104,18 @@
       ],
       "hteilnio": [
         2,
-        2
+        2,
+        0
       ],
       "hteilabs": [
         -79,
-        -75
+        -75,
+        -78
       ],
       "hteilabsp": [
         -0.9875,
-        -0.9375
+        -0.9375,
+        -0.975
       ],
       "adddat": "0"
     },
@@ -122,52 +130,51 @@
       "teile": 0,
       "teilesoll": "50",
       "schichtmin": "30",
-      "schichtdat": 1456677070033,
-      "teilio": 0,
+      "schichtdat": 1463311897235,
+      "teilio": 1,
       "teilnio": 0,
-      "taktist": 0,
+      "taktist": 1,
       "taktsoll": "540",
       "prozess": 3,
       "_id": "MCmi0dc03e",
       "plant": "X.CHE",
       "ip": "X.1.11.12:65102",
       "station": "Verbindung_12_170_2",
-      "addat": "2016-02-28T16:34:25.592Z",
-      "adat": 1456677265592,
-      "sdat": 1456677255578,
-      "stimes": [
-        null,
-        0.5841333333333333,
-        null,
-        null,
-        2.9255
-      ],
+      "addat": "2016-05-15T11:32:12.291Z",
+      "adat": 1463311932291,
+      "sdat": 1463311897234,
+      "stimes": [],
       "hteilio": [
         1,
+        0,
         0
       ],
       "hstimes": [
         0,
-        19,
+        110596,
         1,
         3,
-        0,
+        2,
         0,
         1
       ],
       "hteilnio": [
         0,
-        4
+        4,
+        0
       ],
       "hteilabs": [
         -49,
+        -50,
         -50
       ],
       "hteilabsp": [
         -0.98,
+        -1,
         -1
       ],
       "adddat": "0"
     }
-  ],"positions":[]
+  ],
+  "positions": []
 }
