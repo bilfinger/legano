@@ -10,7 +10,7 @@
 ,  "scripts": { "start": "node server.js" }
 ,  "author": "bill.finger"
 ,  "license": "Free"
-,  "config":{"table":"fabs"
+,  "config":{"table":"fabs","tabs":["fabs"]
             ,"data":"fabs.lst"
             ,"webport":8080
             ,"udpport":8877
