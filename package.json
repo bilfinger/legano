@@ -14,7 +14,7 @@
              ,"tabs":["fabs"]
             ,"data":"fabs.lst"
              ,"is_simulation": false,"is_qatool": false,"is_log": false,
-    "is_splunklog": false,
+    "is_splunklog": false
             ,"webport":8080
             ,"udpport":8877
             ,"splkport":8878
