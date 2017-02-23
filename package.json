@@ -11,7 +11,7 @@
 ,  "author": "bill.finger"
 ,  "license": "Free"
 ,  "config":{"table":"fabs"
-             ,"tabs":["fabs"]
+             ,"tabs":[]
             ,"data":"fabs.lst"
              ,"is_simulation": false,"is_qatool": false,"is_log": false,
     "is_splunklog": false
