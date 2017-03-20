@@ -12,7 +12,10 @@
 ,  "license": "Free"
 ,  "config":{"table":"fabs"
              ,"tabs":[]
-            ,"data":"fabs.lst"
+            ,"data":"deflate","flatdate":"flat"
+             , "flatintabs"    : []
+             , "flatouttabs"   : []
+            
              ,"is_simulation": false,"is_qatool": false,"is_log": false,
     "is_splunklog": false
             ,"webport":8080
